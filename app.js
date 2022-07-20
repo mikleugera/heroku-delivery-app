@@ -13,7 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 require("./routes/shops.routes")(app);
 require("./routes/shopping_card.routes")(app);
 
-const PORT = process.env.PORT || 5000
+// const PORT = process.env.PORT || 5000
+const PORT = config.get('port') || 5000;
 
 app.use(express.static(path.join(__dirname, 'build')));
 
