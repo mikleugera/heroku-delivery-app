@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": " node app.js",
+    "start": "PORT=3001 node app.js",
     "server": "nodemon app.js"
   },
   "dependencies": {
