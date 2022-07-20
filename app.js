@@ -10,8 +10,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-require("/routes/shops.routes")(app);
-require("/routes/shopping_card.routes")(app);
+require("./routes/shops.routes")(app);
+require("./routes/shopping_card.routes")(app);
 
 const PORT = config.get('port') || 5000;
 
